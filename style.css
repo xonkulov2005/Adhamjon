@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+ul,
+ol li {
+  text-decoration: none;
+  list-style: none;
+}
+image {
+  object-fit: cover;
+  width: 200px;
+  height: auto;
+}
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  position: sticky;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffbb00;
+}
+.scrolling {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.scrolling h1 {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  background-color: #ffbb00;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: aliceblue;
+  animation: spinner 0.5s ease 0s 3 alternate forwards;
+  user-select: none;
+  margin-top: 30px;
+}
+.btn:hover {
+  background-color: #12dd74e0;
+  color: rgb(1, 22, 35);
+  transition: 2s ease;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
