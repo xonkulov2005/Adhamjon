@@ -2,7 +2,7 @@ const arr = [
   { id: 1, name: "Oyoq kiyim", image: "images/shoes.png" },
   { id: 2, name: "Futbolka", image: "images/shirt.png" },
   { id: 3, name: "Qo'l soati", image: "images/watch.png" },
-  { id: 4, name: "Komplekt", image: "images/pants.png" },
+  { id: 4, name: "Komplektlar", image: "images/pants.png" },
 ];
 
 const btn = document.querySelector(".btn");
